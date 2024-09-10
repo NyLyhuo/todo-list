@@ -1,0 +1,36 @@
+<script setup lang="ts"></script>
+
+<template>
+  <div
+    class="relative flex items-center justify-center w-screen h-[200px] bg-highlight"
+  >
+    <h1 class="text-4xl font-black">todo</h1>
+    <form class="absolute h-14 -bottom-7 w-full max-w-3xl flex gap-2 py-0 px-4">
+      <input
+        type="text"
+        class="bg-background border border-gray-400 text-text text-base rounded-lg h-auto py-0 px-4 flex-1"
+        placeholder="add new task"
+      />
+      <button class="bg-primary rounded-lg py-0 px-4 gap-2 font-bold font-sm">
+        Create <font-awesome-icon icon="fa-solid fa-plus" />
+      </button>
+    </form>
+  </div>
+  <div class="w-full max-w-3xl mx-auto mt-20">
+    <div class="flex items-center justify-between mb-6">
+      <div class="flex items-center justify-end gap-2">
+        <p>Created tasks</p>
+      <span class="bg-primary text-xs py-0.5 px-3 rounded-full">5</span>
+      </div>
+      <div class="flex items-center justify-end gap-2">
+        <p>Completed</p>
+      <span class="bg-primary text-xs py-0.5 px-3 rounded-full">2 of 5</span>
+      </div>
+    </div>
+    <div class="border border-gray-300 rounded-lg p-4 flex items-center justify-center gap-4">
+        <button><font-awesome-icon icon="fa-solid fa-circle-check" /></button>
+        <p>Integer urna interdum massa libero auctor neque turpis turpis semper. Duis vel sed fames integer.</p>
+        <button><font-awesome-icon icon="fa-solid fa-trash" /></button>
+    </div>
+  </div>
+</template>
